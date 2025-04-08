@@ -7,6 +7,9 @@ import CanvasLoader from "../components/CanvasLoader.jsx";
 import {useMediaQuery} from "react-responsive";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
+import Cube from "../components/Cube.jsx";
+import Rings from "../components/Rings.jsx";
+import HeroCamera from "../components/HeroCamera.jsx";
 
 const Hero = () => {
     // const controls = useControls('HackerRoom', {
@@ -59,20 +62,25 @@ const Hero = () => {
                 {/*<Leva/>*/}
                 <Canvas className = "w-full h-full">
                     <Suspense fallback={<CanvasLoader/>}>
-                        <PerspectiveCamera makeDefault position={[0, 0, 20]}></PerspectiveCamera>
+                        <PerspectiveCamera makeDefault position={[0, 0, 20]}/>
 
-                        <HackerRoom
-                        scale = {isMobile ? 0.06 : 0.07}
-                        position = {[1, -5, 1]}
-                        rotation = {[0.3, 2.9, 0]}
+                        <HeroCamera isMobile = {isMobile}>
+                            <HackerRoom
+                                scale = {isMobile ? 0.06 : 0.07}
+                                position = {[1, -5, 1]}
+                                rotation = {[0, Math.PI, 0]}
 
-                        // position = {[controls.positionX, controls.positionY, controls.positionZ]}
-                        // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
-                        // scale = {[controls.scale, controls.scale, controls.scale]}
-                        />
+                                // position = {[controls.positionX, controls.positionY, controls.positionZ]}
+                                // rotation = {[controls.rotationX, controls.rotationY, controls.rotationZ]}
+                                // scale = {[controls.scale, controls.scale, controls.scale]}
+                            />
+                        </HeroCamera>
+
                         <group>
                             <Target position = {[-9, -10, -10]}/>
                             <ReactLogo position = {[5, 4, 0]}/>
+                            <Cube position = {[7.5, -6, 0]}/>
+                            <Rings position = {[-10, 10, 0]}/>
                         </group>
 
                         <ambientLight intensity = {1}/>
