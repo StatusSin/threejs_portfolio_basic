@@ -6,6 +6,7 @@ import CanvasLoader from "../components/CanvasLoader.jsx";
 // import {Leva, useControls} from "leva";
 import {useMediaQuery} from "react-responsive";
 import Target from "../components/Target.jsx";
+import ReactLogo from "../components/ReactLogo.jsx";
 
 const Hero = () => {
     // const controls = useControls('HackerRoom', {
@@ -71,6 +72,7 @@ const Hero = () => {
                         />
                         <group>
                             <Target position = {[-9, -10, -10]}/>
+                            <ReactLogo position = {[5, 4, 0]}/>
                         </group>
 
                         <ambientLight intensity = {1}/>
