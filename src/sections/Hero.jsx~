@@ -80,7 +80,7 @@ const Hero = () => {
                             <Target position = {[-9, -10, -10]}/>
                             <ReactLogo position = {[5, 4, 0]}/>
                             <Cube position = {[7.5, -6, 0]}/>
-                            <Rings position = {[-5.5, 4, 0]}/>
+                            <Rings position = {[-5.5, 4.5, 0]}/>
                         </group>
 
                         <ambientLight intensity = {1}/>

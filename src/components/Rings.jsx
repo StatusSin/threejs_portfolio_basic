@@ -17,10 +17,6 @@ const Rings = ({ position }) => {
         () => {
             if (refList.current.length === 0) return;
 
-            refList.current.forEach((r) => {
-                r.position.set(position[0], position[1], position[2]);
-            });
-
             gsap
                 .timeline({
                     repeat: -1,
@@ -38,14 +34,10 @@ const Rings = ({ position }) => {
                     },
                 );
         },
-        {
-            dependencies: position,
-        },
-    );
+    []);
 
     return (
-        <Center>
-            <group scale={0.5}>
+            <group position={position} scale={0.5}>
                 {Array.from({ length: 4 }, (_, index) => (
                     <mesh key={index} ref={getRef}>
                         <torusGeometry args={[(index + 1) * 0.5, 0.1]}></torusGeometry>
@@ -53,7 +45,6 @@ const Rings = ({ position }) => {
                     </mesh>
                 ))}
             </group>
-        </Center>
     );
 };
 
