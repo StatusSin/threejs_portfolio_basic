@@ -5,11 +5,11 @@ const ReactLogo = (props) => {
 
     return (
         <Float floatIntensity={1}>
-            <group scale={0.3} {...props} dispose={null}>
+            <group scale={0.4} {...props} dispose={null}>
                 <mesh
                     geometry={nodes['React-Logo_Material002_0'].geometry}
                     material={materials['Material.002']}
-                    position={[7, 0.079, 0.18]}
+                    position={[6, 0.079, 0.18]}
                     rotation={[0, 0, -Math.PI / 2]}
                     scale={[0.39, 0.39, 0.5]}
                 />
