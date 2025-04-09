@@ -1,15 +1,19 @@
+// Foundation Imports
 import {Canvas} from "@react-three/fiber";
 import {PerspectiveCamera} from "@react-three/drei";
-import HackerRoom from "../components/HackerRoom.jsx";
-import {Suspense} from "react";
-import CanvasLoader from "../components/CanvasLoader.jsx";
-// import {Leva, useControls} from "leva";
 import {useMediaQuery} from "react-responsive";
+import {Suspense} from "react";
+// import {Leva, useControls} from "leva";
+
+// Components Imports
+import CanvasLoader from "../components/CanvasLoader.jsx";
+import HackerRoom from "../components/HackerRoom.jsx";
 import Target from "../components/Target.jsx";
 import ReactLogo from "../components/ReactLogo.jsx";
 import Cube from "../components/Cube.jsx";
 import Rings from "../components/Rings.jsx";
 import HeroCamera from "../components/HeroCamera.jsx";
+import Button from "../components/Button.jsx";
 
 const Hero = () => {
     // const controls = useControls('HackerRoom', {
@@ -91,7 +95,7 @@ const Hero = () => {
 
             <div className = "absolute bottom-7 left-0 right-0 w-full z-10 c-space">
                 <a href = "#contact" className = "w-fit">
-                    {/*<Button></Button>*/}
+                    <Button></Button>
                 </a>
             </div>
         </section>
