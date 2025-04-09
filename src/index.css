@@ -21,6 +21,8 @@ body {
         @apply lg:text-4xl text-3xl font-semibold bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent;
     }
 
+    /*Navigation*/
+
     .nav-ul {
         @apply flex flex-col items-center gap-4 lg:flex-row md:gap-6 relative z-20;
     }
@@ -37,8 +39,24 @@ body {
         @apply absolute left-0 right-0 bg-[#0E0E10] backdrop-blur-lg transition-all duration-300 ease-in-out overflow-hidden z-20 mx-auto lg:hidden block;
     }
 
+    /*Hero*/
+
     .hero_tag {
         @apply text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl font-black !leading-normal;
+    }
+
+    /*Button*/
+
+    .btn {
+        @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21]  transition-all active:scale-95 text-white mx-auto;
+    }
+
+    .btn-ping {
+        @apply animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75;
+    }
+
+    .btn-ping_dot {
+        @apply relative inline-flex rounded-full h-3 w-3 bg-green-500;
     }
 
 
