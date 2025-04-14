@@ -62,7 +62,7 @@ const Hero = () => {
                 <p className = "hero_tag bg-gradient-to-r from-[#BEC1CF] from-60% via-[#D5D8EA] via-60% to-[#D5D8EA] to-100% bg-clip-text text-transparent">Creating and Imagining</p>
             </div>
 
-            <div className = "w-full h-full absolute inset-0">
+            <div className = "w-full h-full absolute inset-0 my-20">
                 {/*<Leva/>*/}
                 <Canvas className = "w-full h-full">
                     <Suspense fallback={<CanvasLoader/>}>
