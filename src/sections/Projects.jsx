@@ -1,8 +1,8 @@
-import React from 'react'
-
 const Projects = () => {
     return (
-        <div>Projects</div>
+        <section className = "c-space my-20">
+            <p className = "head-text">My Work</p>
+        </section>
     )
 }
 export default Projects
