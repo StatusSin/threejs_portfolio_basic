@@ -48,7 +48,7 @@ body {
     /*Button*/
 
     .btn {
-        @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21]  transition-all active:scale-95 text-white mx-auto;
+        @apply flex gap-4 items-center justify-center cursor-pointer p-3 rounded-md bg-[#1C1C21] transition-all active:scale-95 text-white mx-auto;
     }
 
     .btn-ping {
@@ -76,6 +76,22 @@ body {
         @apply cursor-pointer flex justify-center items-center gap-2;
     }
 
+    /*Projects*/
+    .arrow-btn {
+        @apply w-10 h-10 p-3 cursor-pointer active:scale-95 transition-all rounded-full z-10;
+
+        background-image: linear-gradient(
+                to right,
+                rgba(255, 255, 255, 0.1) 10%,
+                rgba(255, 255, 255, 0.000025) 50%,
+                rgba(255, 255, 255, 0.000025) 50%,
+                rgba(255, 255, 255, 0.025) 100%
+        );
+    }
+
+    .tech-logo {
+        @apply w-10 h-10 rounded-md p-2 bg-neutral-100/10 backdrop-filter backdrop-blur-lg flex justify-center items-center;
+    }
 }
 
 .waving-hand {
@@ -86,15 +102,7 @@ body {
     display: inline-block;
 }
 
-.arrow-gradient {
-    background-image: linear-gradient(
-            to right,
-            rgba(255, 255, 255, 0.1) 10%,
-            rgba(255, 255, 255, 0.000025) 50%,
-            rgba(255, 255, 255, 0.000025) 50%,
-            rgba(255, 255, 255, 0.025) 100%
-    );
-}
+
 
 @keyframes wave-animation {
     0% {

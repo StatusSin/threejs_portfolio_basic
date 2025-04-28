@@ -14,8 +14,7 @@ const About = () => {
     }
 
     return (
-        <section className = "c-space my-20">
-            /*flex flex-col md:grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 gap-5 min-h-full*/
+        <section className = "px-10 my-20">
             <div className = "flex flex-col md:grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 gap-5 min-h-full">
                 <div className = "col-span-1 row-span-1 xl:row-span-3 xl:col-span-1 min-w-[280px] w-full">
                     <div className = "grid-container">
